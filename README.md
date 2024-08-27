@@ -88,7 +88,7 @@ For Windows users with `pyzbar` issues:
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! 
-Feel free to check the [issues page](https://github.com/yourusername/signal-cli-setup/issues).
+Feel free to check the [issues page](https://github.com/Tentoxa/PhonelessSignal/issues).
 
 ## 📄 License
 
