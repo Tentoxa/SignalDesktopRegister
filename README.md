@@ -1,4 +1,4 @@
-# 📱 Signal Registration Without Phone
+<h1 align="center">📱 Signal Registration Without Phone</h1>
 
 
 <p align="center">
