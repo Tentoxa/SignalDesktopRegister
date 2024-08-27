@@ -1,9 +1,10 @@
-<h1 align="center">📱 Signal Registration Without Phone</h1>
+<h1 align="center">📱 Signal App Registration Without Phone</h1>
 
 
 <p align="center">
   <strong>Automate Signal CLI setup, installation, and configuration with ease!</strong>
 </p>
+
 
 <p align="center">
   <a href="#features">Features</a> •
@@ -14,6 +15,10 @@
   <a href="#contributing">Contributing</a> •
   <a href="#license">License</a>
 </p>
+
+## 🔒 About Signal
+
+Signal is renowned for its robust end-to-end encryption and commitment to user privacy. However, some users may be hesitant to download the mobile app or use their personal phone numbers due to operational security (OPSEC) concerns. This project bridges the gap by enabling Signal registration on desktop and allowing users to use phone numbers from services like 5sim or SMS-Activate.
 
 ## 🚀 Features
 
