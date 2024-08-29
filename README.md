@@ -1,10 +1,12 @@
 <h1 align="center">📱 Signal App Registration Without Phone</h1>
 
-
 <p align="center">
-  <strong>Automate Signal CLI setup, installation, and configuration with ease!</strong>
+  <strong>Automate Signal number registration with ease!</strong>
 </p>
 
+<p align="center">
+  <strong>📺 <a href="https://youtu.be/nB7wCgChNmU">Watch the Tutorial Video</a> 📺</strong>
+</p>
 
 <p align="center">
   <a href="#features">Features</a> •
@@ -35,14 +37,12 @@ Signal is renowned for its robust end-to-end encryption and commitment to user p
 ## 💻 Installation
 
 1. **Clone the repository**:
-
    ```bash
-   git clone https://github.com/yourusername/signal-cli-setup.git
-   cd signal-cli-setup
+   git clone https://github.com/Tentoxa/PhonelessSignal.git
+   cd PhonelessSignal
    ```
 
 2. **Install required Python packages**:
-
    ```bash
    pip install -r requirements.txt
    ```
@@ -50,7 +50,6 @@ Signal is renowned for its robust end-to-end encryption and commitment to user p
 ## 🔧 Usage
 
 Run the script:
-
 ```bash
 python register.py
 ```
