@@ -38,8 +38,8 @@ Signal is renowned for its robust end-to-end encryption and commitment to user p
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Tentoxa/PhonelessSignal.git
-   cd PhonelessSignal
+   git clone https://github.com/Tentoxa/SignalDesktopRegister.git
+   cd SignalDesktopRegister
    ```
 
 2. **Install required Python packages**:
