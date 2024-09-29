@@ -380,6 +380,21 @@ class SignalCLIInteraction:
 
         Logger.log("Successfully added device", Fore.GREEN)
 
+    def add_pin(self, pin):
+        if not pin.isdigit() or len(pin) < 4 or len(pin) > 20:
+            Logger.log("Invalid pin", Fore.RED)
+            exit(1)
+        
+        Logger.log("Adding PIN", Fore.YELLOW)
+        command = f"{self.signal_cli_path} -u {self.phone_number} setPin {pin}"
+        result = subprocess.run(command, capture_output=True, text=True)
+        error = result.stderr.strip()
+        if("failed" in error or "error" in error):
+            Logger.log("Failed to add PIN", Fore.RED)
+            Logger.log(error, Fore.RED)
+            exit(1)
+        Logger.log("Successfully set PIN to "+pin, Fore.GREEN)
+
 
 if __name__ == "__main__":
     setup = SignalCLISetup("assets")
@@ -408,6 +423,12 @@ if __name__ == "__main__":
         interaction.verify(code)
 
     Logger.log("Account registered successfully!", Fore.GREEN)
+
+    print(f"{Fore.YELLOW}Next step will add a PIN to your account.{Style.RESET_ALL}")
+    print(f"{Fore.YELLOW}This PIN will be used to lock and unlock your account (2FA).{Style.RESET_ALL}")
+    pin = input(f"{Fore.CYAN}Please enter a PIN (4-20 digits) or 'skip' to skip:{Style.RESET_ALL} ").strip()
+    if pin.lower() != "skip":
+        interaction.add_pin(pin)
 
     print(f"{Fore.YELLOW}Next step will add your Signal Desktop to the registered account.{Style.RESET_ALL}")
     print(f"{Fore.YELLOW}Please open Signal Desktop and take a screenshot of the QR Code.{Style.RESET_ALL}")
